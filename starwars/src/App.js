@@ -24,7 +24,7 @@ const App = () => {
       .then(res => {
         console.log(res.data.results);
         // setData(res.data);
-        setChar(res.data.results);
+        setCharArr(res.data.results);
       })
       .catch(err => {
         console.log(err);
