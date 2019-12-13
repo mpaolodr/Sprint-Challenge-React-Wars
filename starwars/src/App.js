@@ -5,6 +5,7 @@ import axios from "axios";
 import CardContainer from "./components/CardContainer.js";
 
 //Import styles
+import { AppContainer } from "./Styles.js";
 import "./App.css";
 
 const App = () => {
@@ -32,10 +33,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <AppContainer>
       <h1 className="Header">React Wars</h1>
       <CardContainer charArr={charArr} />
-    </div>
+    </AppContainer>
   );
 };
 

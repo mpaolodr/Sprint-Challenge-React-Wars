@@ -1,15 +1,18 @@
 import React from "react";
 
+//import styled-components
+import { MainCont } from "../Styles.js";
+
 //Import Components
 import CharInfo from "./CharInfo.js";
 
 function CardContainer({ charArr }) {
   return (
-    <div>
+    <MainCont>
       {charArr.map(char => {
         return <CharInfo char={char} />;
       })}
-    </div>
+    </MainCont>
   );
 }
 

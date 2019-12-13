@@ -1,11 +1,15 @@
 import React from "react";
 
+//import styled-components
+import { Info, Text } from "../Styles.js";
+
 function CharInfo({ char }) {
   return (
-    <div>
-      <h1>{char.name}</h1>
-      <h2>{char.gender}</h2>
-    </div>
+    <Info>
+      <Text type="name">Name: {char.name}</Text>
+      <Text type="gender">Gender: {char.gender}</Text>
+      <Text type="hair-color">Hair-color: {char.hair_color}</Text>
+    </Info>
   );
 }
 
