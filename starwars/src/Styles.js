@@ -17,7 +17,7 @@ export const MainCont = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
-  border: 2px solid white;
+  position: relative;
 `;
 
 //styles for charinfo
@@ -29,6 +29,7 @@ export const Info = styled.div`
   background-color: black;
   margin-bottom: 10px;
   border-radius: 10px;
+  overflow: hidden;
 `;
 
 export const Text = styled.h1`
@@ -39,7 +40,6 @@ export const Text = styled.h1`
 `;
 
 export const BtnContainer = styled.div`
-  border: 2px solid white;
   width: 80%;
   padding: 10px 0;
   display: flex;

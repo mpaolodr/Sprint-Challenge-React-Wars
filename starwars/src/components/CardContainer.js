@@ -6,11 +6,11 @@ import { MainCont } from "../Styles.js";
 //Import Components
 import CharInfo from "./CharInfo.js";
 
-function CardContainer({ charArr }) {
+function CardContainer({ charArr, enlarge }) {
   return (
     <MainCont>
       {charArr.map(char => {
-        return <CharInfo char={char} />;
+        return <CharInfo enlarge={enlarge} key={char.name} char={char} />;
       })}
     </MainCont>
   );

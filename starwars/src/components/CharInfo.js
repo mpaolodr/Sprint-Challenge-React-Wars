@@ -9,6 +9,8 @@ function CharInfo({ char }) {
       <Text type="name">Name: {char.name}</Text>
       <Text type="gender">Gender: {char.gender}</Text>
       <Text type="hair-color">Hair-color: {char.hair_color}</Text>
+      <Text type="mass">Mass: {char.mass}</Text>
+      <Text type="height">Height: {char.height}</Text>
     </Info>
   );
 }

@@ -25,8 +25,6 @@ const App = () => {
     axios
       .get(`https://swapi.co/api/people/?page=${page}`)
       .then(res => {
-        console.log(res.data.results);
-        // setData(res.data);
         setCharArr(res.data.results);
       })
       .catch(err => {
@@ -34,9 +32,11 @@ const App = () => {
       });
   }, [page]);
 
-  //function to change page
+  //functions to change page
   const nextPage = () => {
-    setPage(page + 1);
+    if (page !== 9) {
+      setPage(page + 1);
+    }
   };
 
   const prevPage = () => {
